@@ -1,0 +1,79 @@
+body {
+  background: url('https://png.pngtree.com/thumb_back/fh260/background/20231020/pngtree-soft-blush-sands-pastel-beige-pink-texture-image_13647920.png')
+    no-repeat center center fixed;
+  background-size: cover;
+  color: #012639;
+}
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-color: rgba(255, 240, 245, 0.3); /* blush tint */
+  z-index: -1;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.75); /* subtle overlay */
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+}
+
+.nav {
+  background: transparent;
+  font-family: 'Bree Serif', serif;
+}
+
+@media (max-width: 767px) {
+  .nav-links {
+    background: linear-gradient(to top left, #FAF3EF 0%, #FDEDEB 62%, #FFD9DA 100%);
+  }
+}
+
+.nav a {
+  color: #2B2E3A;
+  font-weight: 500;
+}
+
+.nav h3 {
+  color: #2B2E3A;
+  font-weight: 500;
+}
+
+.theme-btn {
+  background-color: #4C777A;
+  color: #FAF3EF;
+  cursor: pointer;
+}
+
+#line1, #line2, #line3 {
+  background-color: #4C777A;
+}
+
+#hamburger:hover {
+  #line1, #line2, #line3 {
+    background-color: #D88C9A; /* soft warm coral on hover */
+  }
+}
+
+.head {
+  color: #2B2E3A;
+}
+
+.hero p {
+  color: #5F646D;
+}
+
+.sub-head {
+  color: #4C777A;
+}
+
+.cv {
+  background-color: #4C777A;
+  color: #FAF3EF;
+}
+
+.talk {
+  border: 2px solid #4C777A;
+  color: #4C777A;
+}
+
