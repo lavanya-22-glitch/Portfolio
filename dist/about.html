@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lavanya Bhadani | Portfolio</title>
+  <title>About | Lavanya Bhadani | Portfolio</title>
   <link rel="stylesheet" href="./output.css" />
   <link rel="stylesheet" href="./light.css" id="theme-style" />
   <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -14,29 +15,30 @@
 
 <body class="font-bree">
 
-    <div class="content m-4 md:m-8 lg:m-16 rounded-3xl">
+    <div class="content m-4 md:m-8 lg:m-16 rounded-3xl shadow-lg">
 
   <nav class="nav flex justify-between items-center p-4 font-bree mb-8 mt-2 sticky top-0 z-50 shadow-md backdrop-blur-md rounded-3xl">
 
-    <h3 class="name text-2xl font-semibold tracking-wider pl-3">Lavanya Bhadani</h3>
+    <h3 class="name text-2xl font-semibold tracking-wider pl-3 shine-text transition duration-500 ease-in-out">Lavanya Bhadani</h3>
 
     <div class="flex items-center gap-4">
 
-    <button id="hamburger" class="hamburger md:hidden flex flex-col gap-1 z-50">
-        <span id="line1" class="w-6 h-0.5 bg-black transition-all duration-300 origin-top-left"></span>
-        <span id="line2" class="w-6 h-0.5 bg-black transition-all duration-300"></span>
-        <span id="line3" class="w-6 h-0.5 bg-black transition-all duration-300 origin-bottom-left"></span>
+    <!-- Hamburger Button -->
+    <button id="hamburger" class="md:hidden flex flex-col justify-between h-5 w-6 z-50">
+      <span id="line1" class="block h-0.5 w-full bg-black transition-transform duration-300 origin-center"></span>
+      <span id="line2" class="block h-0.5 w-full bg-black transition-opacity duration-300"></span>
+      <span id="line3" class="block h-0.5 w-full bg-black transition-transform duration-300 origin-center"></span>
     </button>
 
     <ul id="nav-links" class="nav-links absolute top-full right-0 mt-2 rounded-lg shadow-lg px-6 py-4 space-y-2 
          hidden flex-col text-center md:flex md:static md:flex-row md:space-y-0 md:space-x-4 
          md:bg-transparent md:shadow-none md:rounded-none md:p-0 !important lg:bg-transparent">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html" class="hover:scale-105 hover-underline-sage">Launchpad</a></li>
+      <li><a href="about.html" class="hover:scale-105 hover-underline-sage">Meet Lavanya</a></li>
+      <li><a href="projects.html" class="hover:scale-105 hover-underline-sage">My Crafted Code</a></li>
+      <li><a href="skills.html" class="hover:scale-105 hover-underline-sage">My Dev Kit</a></li>
+      <li><a href="blog.html" class="hover:scale-105 hover-underline-sage">Code & Chaos</a></li>
+      <li><a href="contact.html" class="hover:scale-105 hover-underline-sage">Ping Me!</a></li>
     </ul>
 
     <button id="theme-toggle" class="theme-btn p-2 rounded-2xl border border-black">🌓</button>
@@ -44,43 +46,91 @@
 
   </nav>
 
+  <div class="grid grid-cols-1 lg:grid-cols-[3fr_1px_2fr] gap-6 max-w-full px-4">
 
-    <section class="main" id="main">
-        <h2 class="sub-head">Get to Know Me</h2>
+    <!-- Left Column (60%) -->
+    <section class="main text-[#2B2E3A] mx-auto px-6 text-justify leading-relaxed space-y-5" id="main">
+      <h2 class="sub-head text-[#338866] font-light text-2xl" 
+          data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-offset="100">Get to Know Me</h2>
 
-        <p>I'm Lavanya Bhadani, a B.Tech student in Artificial Intelligence and Data Science at IIT Patna. I chose this branch because of its immense future potential — AI is transforming every industry, and I'm especially fascinated by how it mimics human behavior. I've always been curious about the inner workings of intelligent systems, and one of my long-term dreams is to build my own humanoid.</p>
-        <p>My coding journey began back in 10th grade. What started as a school requirement soon became a genuine interest. Since then, I've explored various areas of development and enjoyed building projects that solve everyday problems. I work on both the frontend and backend of websites — the creative challenges of frontend design appeal to me just as much as the logical depth of backend development.</p>
-        <p>Currently, I'm learning about the applications of Python in machine learning and data science, and I hope to integrate these skills into my own projects. When I face difficulties or bugs, I like to revisit the core concepts by using tools like ChatGPT or Perplexity to get concise explanations. This helps me understand problems deeply and come up with my own solutions.</p>
-        <p>I'm especially drawn to building apps and websites that are simple, user-friendly, and utility-focused — tools that make people's lives just a bit easier. Outside the tech world, I enjoy playing basketball, swimming, chess, and writing poems. I also participate in public speaking and JAM sessions, and have taken up roles as an adjudicator in competitions.</p>
-        <p>I'd describe myself as cheerful, motivated, observant, and someone who's always eager to learn and improve.</p>
+      <p data-aos="fade-right" data-aos-delay="0" data-aos-easing="ease-out-cubic" data-aos-offset="100">
+        I'm Lavanya Bhadani, a B.Tech student in Artificial Intelligence and Data Science at IIT Patna. I chose this branch because of its immense future potential — AI is transforming every industry, and I'm especially fascinated by how it mimics human behavior. I've always been curious about the inner workings of intelligent systems, and one of my long-term dreams is to build my own humanoid.
+      </p>
 
+      <p data-aos="fade-right" data-aos-delay="100" data-aos-easing="ease-out-cubic" data-aos-offset="100">
+        My coding journey began back in 10th grade. What started as a school requirement soon became a genuine interest. Since then, I've explored various areas of development and enjoyed building projects that solve everyday problems. I work on both the frontend and backend of websites — the creative challenges of frontend design appeal to me just as much as the logical depth of backend development.
+      </p>
+
+      <p data-aos="fade-right" data-aos-delay="200" data-aos-easing="ease-out-cubic" data-aos-offset="100">
+        Currently, I'm learning about the applications of Python in machine learning and data science, and I hope to integrate these skills into my own projects. When I face difficulties or bugs, I like to revisit the core concepts by using tools like ChatGPT or Perplexity to get concise explanations. This helps me understand problems deeply and come up with my own solutions.
+      </p>
+
+      <p data-aos="fade-right" data-aos-delay="300" data-aos-easing="ease-out-cubic" data-aos-offset="100">
+        I'm especially drawn to building apps and websites that are simple, user-friendly, and utility-focused — tools that make people's lives just a bit easier. Outside the tech world, I enjoy playing basketball, swimming, chess, and writing poems. I also participate in public speaking and JAM sessions, and have taken up roles as an adjudicator in competitions.
+      </p>
+
+      <p data-aos="fade-right" data-aos-delay="400" data-aos-easing="ease-out-cubic" data-aos-offset="100">
+        I'd describe myself as cheerful, motivated, observant, and someone who's always eager to learn and improve.
+      </p>
     </section>
 
-    <section class="sub-main" id="campus-roles">
-    <h3 class="sub-sub-head">Campus Roles</h3>
-    <ul class="campus-roles">
-        <li>
-        <strong>Class Representative</strong> – AI & DS Batch, IIT Patna  
-        <p>As the elected CR, I serve as the bridge between students and faculty. I help streamline academic communication, address concerns on behalf of the batch, and coordinate logistics for meetings and announcements. This role has taught me leadership, responsibility, and active listening.</p>
+    <!-- Divider -->
+    <hr class="my-8 h-px w-full bg-gradient-to-r from-[#D88C9A] to-[#4C777A] border-0 lg:hidden" 
+        data-aos="zoom-in" data-aos-delay="500" data-aos-offset="80" />
+
+    <div class="hidden lg:flex items-center justify-center" 
+        data-aos="zoom-in" data-aos-delay="500" data-aos-offset="80">
+      <hr class="h-[80%] w-px bg-gradient-to-b from-[#D88C9A] to-[#4C777A] border-0" />
+    </div>
+
+    <!-- Right Column (40%) -->
+    <section class="sub-main mx-auto px-4" id="campus-roles">
+      <h3 class="sub-head text-[#338866] font-light text-2xl pb-4" 
+          data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-offset="100">Campus Roles</h3>
+
+      <ul class="campus-roles grid grid-cols-1 gap-6">
+        <li class="bg-[rgba(255,240,245,0.4)] rounded-xl p-6 backdrop-blur-md shadow-md transition-transform hover:scale-[1.02]"
+            data-aos="flip-left" data-aos-delay="100" data-aos-easing="ease-out-cubic" data-aos-offset="100">
+          <strong>Class Representative</strong> – AI & DS Batch, IIT Patna  
+          <p class="mt-2">As the elected CR, I serve as the bridge between students and faculty. I help streamline academic communication, address concerns on behalf of the batch, and coordinate logistics for meetings and announcements. This role has taught me leadership, responsibility, and active listening.</p>
         </li>
 
-        <li>
-        <strong>Sub-Coordinator</strong> – Hexachrome (Puzzle Club)  
-        <p>At Hexachrome, I help organize logical puzzle events and weekly challenges that engage the IIT Patna community. It fuels my interest in problem-solving and sharpens my ability to design intellectually stimulating content for others.</p>
+        <li class="bg-[rgba(255,240,245,0.4)] rounded-xl p-6 backdrop-blur-md shadow-md transition-transform hover:scale-[1.02]"
+            data-aos="flip-left" data-aos-delay="200" data-aos-easing="ease-out-cubic" data-aos-offset="100">
+          <strong>Sub-Coordinator</strong> – Hexachrome (Puzzle Club)  
+          <p class="mt-2">At Hexachrome, I help organize logical puzzle events and weekly challenges that engage the IIT Patna community. It fuels my interest in problem-solving and sharpens my ability to design intellectually stimulating content for others.</p>
         </li>
 
-        <li>
-        <strong>Sub-Coordinator</strong> – Celesta Tech Fest (Design Team)  
-        <p>I work as part of the Celesta design team to conceptualize and create posters, digital assets, and social media visuals for one of IIT Patna’s biggest tech festivals. This role lets me blend creativity with coordination and gives me hands-on experience with branding and event aesthetics.</p>
+        <li class="bg-[rgba(255,240,245,0.4)] rounded-xl p-6 backdrop-blur-md shadow-md transition-transform hover:scale-[1.02]"
+            data-aos="flip-left" data-aos-delay="300" data-aos-easing="ease-out-cubic" data-aos-offset="100">
+          <strong>Sub-Coordinator</strong> – Celesta Tech Fest (Design Team)  
+          <p class="mt-2">I work as part of the Celesta design team to conceptualize and create posters, digital assets, and social media visuals for one of IIT Patna’s biggest tech festivals. This role lets me blend creativity with coordination and gives me hands-on experience with branding and event aesthetics.</p>
         </li>
-    </ul>
+      </ul>
     </section>
+  </div>
+
 
 
   <section class="speed-links flex gap-8 pb-8 pt-4 lg:pt-16 pl-16">
-    <a href="mailto:lavi.bhadani@gmail.com" target="_blank"><img src="gmail.png" alt="Gmail" class="w-8" /></a>
-    <a href="https://github.com/lavanya-22-glitch" target="_blank"><img src="github.png" alt="GitHub" class="w-8" /></a>
-    <a href="https://www.linkedin.com/in/lavanya-bhadani-1834b1313/" target="_blank"><img src="linkedin.png" alt="LinkedIn" class="w-8" /></a>
+    <a href="mailto:lavi.bhadani@gmail.com" target="_blank" aria-label="Gmail">
+      <svg class="w-8 h-8 fill-current text-[#2B2E3A] hover:text-[#D88C9A] transition-colors duration-300"
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path d="M502.3 190.8L327.4 338.1c-18.8 15.3-45.9 15.3-64.7 0L9.7 190.8C3.9 186.1 0 178.8 0 171v240c0 17.7 14.3 32 32 32h448c17.7 0 32-14.3 32-32V171c0 7.8-3.9 15.1-9.7 19.8zM256 288l224-182.4V80c0-17.7-14.3-32-32-32H64C46.3 48 32 62.3 32 80v25.6L256 288z"/>
+      </svg>
+    </a>
+    <a href="https://github.com/lavanya-22-glitch" target="_blank" aria-label="GitHub">
+      <svg class="w-8 h-8 fill-current text-[#2B2E3A] hover:text-[#4C777A] transition-colors duration-300"
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 008.02 10.96c.59.11.8-.25.8-.56v-2.14c-3.26.71-3.95-1.57-3.95-1.57-.54-1.39-1.32-1.76-1.32-1.76-1.08-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.6-.3-5.34-1.3-5.34-5.79 0-1.28.46-2.33 1.23-3.15-.12-.3-.53-1.52.12-3.18 0 0 .99-.32 3.24 1.21a11.25 11.25 0 015.9 0c2.25-1.53 3.24-1.21 3.24-1.21.65 1.66.24 2.88.12 3.18.77.82 1.23 1.87 1.23 3.15 0 4.5-2.75 5.49-5.37 5.79.43.37.82 1.1.82 2.22v3.3c0 .31.21.68.81.56A11.5 11.5 0 0023.5 12C23.5 5.73 18.27.5 12 .5z"/>
+      </svg>
+    </a>
+    <a href="https://www.linkedin.com/in/lavanya-bhadani-1834b1313/" target="_blank" aria-label="LinkedIn">
+      <svg class="w-8 h-8 fill-current text-[#2B2E3A] hover:text-[#4C777A] transition-colors duration-300"
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path d="M100.28 448H7.4V148.9h92.88zm-46.44-341C24.22 107 0 82.77 0 53.64 0 24.5 24.22.28 53.64.28s53.64 24.22 53.64 53.64c0 29.13-24.22 53.36-53.64 53.36zM447.9 448h-92.4V302.4c0-34.7-12.5-58.3-43.8-58.3-23.9 0-38.2 16.1-44.5 31.6-2.3 5.5-2.8 13.2-2.8 21v151.3H172.1s1.2-245.5 0-270.6h92.4v38.3c-.2.3-.5.7-.7 1h.7v-1c12.3-19 34.3-46 83.6-46 61 0 106.9 39.8 106.9 125.2V448z"/>
+      </svg>
+    </a>
   </section>
 
 </div>
@@ -88,5 +138,14 @@
 
 
 <script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,      // Animation duration in ms
+    easing: 'ease-in-out',
+    once: true           // Only animate once per element
+  });
+</script>
+
 </body>
 </html>

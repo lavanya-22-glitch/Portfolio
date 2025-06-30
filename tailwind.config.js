@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./dist/*.html",
     "./dist/*.js", 
+    "./input.css",
   ],
   theme: {
     extend: {

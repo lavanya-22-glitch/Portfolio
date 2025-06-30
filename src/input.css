@@ -20,7 +20,7 @@
     background: linear-gradient(
       120deg,
       transparent 0%,
-      rgba(255, 255, 255, 0.6) 50%,
+      #fff 50%,
       transparent 100%
     );
     transform: skewX(-20deg);
@@ -53,3 +53,50 @@
     animation: floaty 7s ease-in-out infinite;
   }
 }
+
+@layer utilities {
+  .hover-underline-sage {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .hover-underline-sage::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: 2px;
+    background-color: #9CAD84; /* Sage green */
+    box-shadow: #D4AF37;
+    transition: transform 0.3s ease;
+  }
+
+  .hover-underline-sage:hover::after {
+    transform: translateX(-50%) scaleX(1);
+  }
+}
+
+@layer utilities {
+  @keyframes wave {
+    0% { transform: rotate(0deg) translate(0, 0); }
+    15% { transform: rotate(14deg) translate(1px, -2px); }
+    30% { transform: rotate(-10deg) translate(-2px, 2px); }
+    45% { transform: rotate(14deg) translate(2px, -3px); }
+    60% { transform: rotate(-8deg) translate(-2px, 1px); }
+    75% { transform: rotate(10deg) translate(1px, -1px); }
+    100% { transform: rotate(0deg) translate(0, 0); }
+  }
+
+  .animate-wave {
+    animation: wave 1.2s ease-in-out;
+  }
+
+  .paused-wave {
+    animation: none;
+  }
+}
+

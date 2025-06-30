@@ -1,13 +1,28 @@
 body {
-  background: linear-gradient(to top, #1E1F26 10%, #2C2B35 58%, #4C777A 100%);
-  color: #F5F5F5;
+  background: linear-gradient(to top, #1a1c1e 0%, #2a2f30 50%, #1e2426 100%);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #f5f5f5;
 }
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: radial-gradient(circle at 20% 30%, rgba(204, 183, 209, 0.12), transparent 60%),
+              radial-gradient(circle at 80% 70%, rgba(180, 222, 211, 0.12), transparent 50%);
+  backdrop-filter: blur(2px);
+  z-index: -1;
+}
+
 
 .content {
-  background-color: #2C2B35;
-  box-shadow: 4px 4px 15px rgba(255, 255, 255, 0.05);
+  background-color: rgba(48, 44, 42, 0.6); /* semi-charcoal */
+  box-shadow: 0 4px 15px rgba(239, 208, 202, 0.1); /* blush shadow */
+  backdrop-filter: blur(8px);
 }
 
+/* NAV */
 .nav {
   background: transparent;
   font-family: 'Bree Serif', serif;
@@ -15,54 +30,64 @@ body {
 
 @media (max-width: 767px) {
   .nav-links {
-    background: linear-gradient(to top left, #1E1F26 0%, #2C2B35 62%, #4C777A 100%);
+    background: linear-gradient(to top left, #2A2625 0%, #332D2C 62%, #3C3534 100%);
   }
 }
 
 .nav a {
-  color: #F5F5F5;
+  color: #F5EDEB;
   font-weight: 500;
+}
+
+.nav a:hover {
+  color: #EFD0CA;
+  text-shadow: 0 0 6px #CFA8A0;
 }
 
 .nav h3 {
-  color: #FFD9DA;
+  color: #F5EDEB;
   font-weight: 500;
 }
 
+/* THEME TOGGLE */
 .theme-btn {
-  background-color: #FFBABA;
-  color: #1E1F26;
+  background-color: #CFA8A0;
+  color: #1E1B1A;
   cursor: pointer;
 }
 
+/* Hamburger lines */
 #line1, #line2, #line3 {
-  background-color: #FFD9DA;
+  background-color: #CFA8A0;
 }
 
-#hamburger:hover #line1,
-#hamburger:hover #line2,
-#hamburger:hover #line3 {
-  background-color: #FFBABA;
+#hamburger:hover {
+  #line1, #line2, #line3 {
+    background-color: #23868f;
+  }
 }
 
+/* HERO */
 .head {
-  color: #F5F5F5;
+  color: #F5EDEB;
 }
 
 .hero p {
-  color: #B8BFC9;
+  color: #C7BEBB;
 }
 
 .sub-head {
-  color: #FFBABA;
+  color: #55b7c0;
 }
 
+/* BUTTONS */
 .cv {
-  background-color: #FFD9DA;
-  color: #1E1F26;
+  background-color: #23868f;
+  color: #FAF3EF;
+  box-shadow: 0 4px 12px rgba(178, 200, 186, 0.4);
+  transition: transform 0.3s ease;
 }
-
 .talk {
-  border: 2px solid #FFD9DA;
-  color: #FFD9DA;
+  border: 2px solid #70afb4;
+  color: #70afb4;
 }
