@@ -8,6 +8,34 @@
   <link rel="stylesheet" href="./light.css" id="theme-style" />
   <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
 
+
+  <style>
+@keyframes rotateInfinite {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+#flyinPic {
+  position: absolute;
+  transition: transform 0.3s ease-in-out;
+  z-index: 50;
+  pointer-events: none;
+}
+
+
+
+.rotate {
+  animation: rotateInfinite 0.5s linear infinite;
+}
+
+.fly-in {
+  animation: flyIn 0.5s ease-out forwards;
+}
+</style>
+
+
+
 </head>
 
 
@@ -56,6 +84,9 @@
     <p class="px-6 sm:px-12 pt-4 text-justify tracking-wide">
       Building ideas into solutions | AI | Web Dev | Problem Solver
     </p>
+    <p class="px-6 sm:px-12 pt-4 text-justify tracking-wide !text-black">
+      Click my picture to view about me.
+    </p>
     <p class="px-6 sm:px-12 pt-4 text-justify tracking-wide">
         Hello! I’m Lavanya Bhadani, a B.Tech student in Artificial Intelligence and Data Science at IIT Patna.
         I have experience in front-end development using HTML, CSS, JavaScript, and React, and I’m also exploring back-end technologies like Python and MySQL.I enjoy working on practical projects — from task managers to weather apps — and I’m always looking to learn more and build better.
@@ -70,7 +101,14 @@
     </div>
     </div>
 
-    <img src="self.png" alt="Profile Pic" class="animate-floaty mx-auto justify-center items-center ">
+<!-- Profile Picture -->
+<img src="self.png" id="profilePic" alt="Profile Pic" class="animate-floaty mx-auto justify-center items-center cursor-pointer">
+
+<!-- Hidden Fly-in Image -->
+<img src="helicopter.gif" id="flyinPic" class="hidden absolute w-10 h-10" />
+
+<!-- Audio -->
+<audio id="bgMusic" src="helicopter_helicopter.mp3"></audio>
   </section>
 
 
@@ -96,6 +134,53 @@
   </section>
 
 </div>
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const pic = document.getElementById('profilePic');
+  const music = document.getElementById('bgMusic');
+  const flyin = document.getElementById('flyinPic');
+
+  // Utility to generate random X/Y within viewport bounds
+  function getRandomPosition() {
+    const maxX = window.innerWidth - flyin.offsetWidth;
+    const maxY = window.innerHeight - flyin.offsetHeight;
+    const x = Math.floor(Math.random() * maxX);
+    const y = Math.floor(Math.random() * maxY);
+    return { x, y };
+  }
+
+  // Start flying effect repeatedly like a fly
+  function startFlyingLikeAFly() {
+    flyin.classList.remove('hidden');
+    flyin.style.transition = "transform 0.25s ease-in-out"; // fast darting
+
+    setInterval(() => {
+      const { x, y } = getRandomPosition();
+      flyin.style.transform = `translate(${x}px, ${y}px)`;
+    }, 500); // adjust for speed
+  }
+
+  // Click event
+  pic.addEventListener('click', () => {
+    // Start rotating profile pic
+    pic.classList.add('rotate');
+
+    // Play music after 0.5s
+    setTimeout(() => {
+      music.play();
+    }, 300);
+
+    // Start fly-like motion after 1s
+    setTimeout(() => {
+      startFlyingLikeAFly();
+    }, 3500);
+  });
+});
+</script>
 
 
 
