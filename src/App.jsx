@@ -15,7 +15,7 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen transition-colors duration-300">
+      <div className="px-2 min-h-screen transition-colors duration-300">
         <Navbar />
         
         {/* Add padding-top (pt-20) here so the fixed Navbar doesn't cover content */}

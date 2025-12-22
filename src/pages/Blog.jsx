@@ -12,7 +12,7 @@ const Blog = () => {
       date: "Dec 10, 2025",
       readTime: "2 min read",
       category: "Research",
-      image: "https://placehold.co/600x400/sage/white?text=Agentic+AI"
+      image: "/images/agentic.avif"
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ const Blog = () => {
       date: "Oct 28, 2025",
       readTime: "3 min read",
       category: "Leadership",
-      image: "https://placehold.co/600x400/lavender/white?text=GDG+Community"
+      image: "/images/gdg.png"
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ const Blog = () => {
       date: "Sep 15, 2025",
       readTime: "4 min read",
       category: "Design",
-      image: "https://placehold.co/600x400/475569/white?text=CSS+Art"
+      image: "/images/css.jfif"
     }
   ];
 
