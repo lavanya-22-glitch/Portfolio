@@ -33,7 +33,7 @@ const Home = () => {
           </div>
 
           <p className="text-slate-600 dark:text-slate-300 text-lg leading-relaxed max-w-lg mx-auto md:mx-0">
-            I am a B.Tech undergraduate at <strong>IIT Patna</strong> (SPI 9.57), bridging the gap between deep learning research and production software. From publishing on <strong>Federated Learning</strong> to building <strong>Agentic AI</strong> systems, I am passionate about engineering solutions that are both intelligent and scalable.
+            I am a B.Tech undergraduate at <strong>IIT Patna</strong>, bridging the gap between deep learning research and production software. From publishing on <strong>Federated Learning</strong> to building <strong>Agentic AI</strong> systems, I am passionate about engineering solutions that are both intelligent and scalable.
           </p>
 
           {/* Action Buttons */}
