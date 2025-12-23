@@ -117,9 +117,11 @@ const ProjectCard = ({ project, onExpand }) => {
                       <ExternalLink className="w-4 h-4" /> Live
                     </a>
                  )}
-                 <a href={project.repoLink} target="_blank" rel="noreferrer" onClick={stopProp} className="flex items-center gap-2 text-sm font-bold text-slate-700 dark:text-slate-200 hover:text-sage transition">
-                   <Github className="w-4 h-4" /> Code / Repo
-                 </a>
+                 {project.repoLink && (
+                   <a href={project.repoLink} target="_blank" rel="noreferrer" onClick={stopProp} className="flex items-center gap-2 text-sm font-bold text-slate-700 dark:text-slate-200 hover:text-sage transition">
+                     <Github className="w-4 h-4" /> Code / Repo
+                   </a>
+                 )}
                  {project.videoLink && (
                  <a href={project.videoLink} target="_blank" rel="noreferrer" onClick={stopProp} className="flex items-center gap-2 text-sm font-semibold text-slate-700 dark:text-slate-200 hover:text-sage transition">
                    <ExternalLink className="w-4 h-4" /> Video
@@ -177,8 +179,8 @@ const Projects = () => {
         "/images/taskoffloading.png", 
         "https://placehold.co/400x300/475569/ffffff?text=System+Architecture"
       ],
-      repoLink: "#", 
-      paperLink: "#", 
+      // repoLink: "#", 
+      paperLink: "https://drive.google.com/file/d/16X9uJ7jrqyC8D3OHGqFM7y4fia7SY9ns/view?usp=drive_link", 
       demoLink: null,
       type: "Ongoing Research",
       layout: "full" 
@@ -195,8 +197,8 @@ const Projects = () => {
         "/images/federated.png",
         "/images/comsnets.png"
       ],
-      repoLink: "#",
-      paperLink: "#",
+      repoLink: null,
+      paperLink: "https://drive.google.com/file/d/1MeBfapDZF8KByvp49ykNyx3yPEnGwhgP/view?usp=drive_link",
       demoLink: null,
       type: "Conference Paper",
       layout: "split"
