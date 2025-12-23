@@ -108,6 +108,7 @@ const ProjectCard = ({ project, onExpand }) => {
                     <FileText className="w-4 h-4" /> Paper
                   </a>
                ) : <div />}
+               
 
                {/* Repo/Demo Link */}
                <div className="flex gap-4">
@@ -119,6 +120,11 @@ const ProjectCard = ({ project, onExpand }) => {
                  <a href={project.repoLink} target="_blank" rel="noreferrer" onClick={stopProp} className="flex items-center gap-2 text-sm font-bold text-slate-700 dark:text-slate-200 hover:text-sage transition">
                    <Github className="w-4 h-4" /> Code / Repo
                  </a>
+                 {project.videoLink && (
+                 <a href={project.videoLink} target="_blank" rel="noreferrer" onClick={stopProp} className="flex items-center gap-2 text-sm font-semibold text-slate-700 dark:text-slate-200 hover:text-sage transition">
+                   <ExternalLink className="w-4 h-4" /> Video
+                 </a>
+               )}
                </div>
             </div>
 
@@ -211,6 +217,7 @@ const Projects = () => {
         "/images/ttt (2).png",
         "/images/ttt (3).png"
       ],
+      videoLink: "https://drive.google.com/file/d/1Apnya0tqz89O1m3rvoAHpzkBaPeRaY-B/view?usp=sharing",
       repoLink: "https://github.com/lavanya-22-glitch/ultimate-ttt-app",
       demoLink: "https://ultimate-ttt-app-front.onrender.com/", 
       type: "1st Place Winner",
