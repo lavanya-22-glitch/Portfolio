@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom'; // <--- ADD THIS
-import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowRight, Download, Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
 
 const Home = () => {
   return (
@@ -33,17 +33,17 @@ const Home = () => {
           </div>
 
           <p className="text-slate-600 dark:text-slate-300 text-lg leading-relaxed max-w-lg mx-auto md:mx-0">
-            I am a B.Tech undergraduate at <strong>IIT Patna</strong>, bridging the gap between deep learning research and production software. From publishing on <strong>Federated Learning</strong> to building <strong>Agentic AI</strong> systems, I am passionate about engineering solutions that are both intelligent and scalable.
+            I am a B.Tech undergraduate at <strong>IIT Patna</strong>, bridging the gap between deep learning research and production software. From presenting ideas on <strong>Federated Learning</strong> to building <strong>Agentic AI</strong> systems, I am passionate about engineering solutions that are both intelligent and scalable.
           </p>
 
           {/* Action Buttons */}
           <div className="flex flex-wrap gap-4 justify-center md:justify-start pt-4">
             
-            {/* Download CV Button */}
-            {/* Make sure to put your resume file in public/resume.pdf */}
+            {/* Download CV Button - Links to Drive */}
             <a 
-              href="/resume.pdf" 
-              download="Lavanya_Bhadani_Resume.pdf"
+              href="https://drive.google.com/drive/folders/1aC8E2PggCxxPNGfG9xI_EdW2aYd2QvWb?usp=drive_link" // <--- Paste your Drive Link here
+              target="_blank"
+              rel="noreferrer"
               className="px-6 py-3 rounded-full bg-sage hover:bg-sage-dark text-white font-medium transition-all shadow-lg hover:shadow-sage/40 flex items-center gap-2 group transform hover:-translate-y-1"
             >
               Download CV 

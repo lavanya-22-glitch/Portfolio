@@ -20,7 +20,7 @@ const About = () => {
     {
       title: "Sub-Coordinator",
       org: "Hexachrome (Puzzle Club)",
-      desc: "Organizing logic-based competitions and weekly puzzle challenges. It fuels my interest in algorithmic thinking and problem-solving beyond the curriculum.",
+      desc: "Organizing logic-based competitions and weekly puzzle challenges. It fuels my interest in thinking and problem-solving beyond the curriculum.",
       icon: <Puzzle className="w-6 h-6 text-blue-400" />
     }
   ];
@@ -69,23 +69,20 @@ const About = () => {
           className="lg:col-span-7 space-y-6 text-slate-600 dark:text-slate-300 text-lg leading-relaxed text-justify"
         >
           <motion.p variants={itemVariants}>
-            I am a 2nd-year B.Tech student in <strong>Artificial Intelligence and Data Science</strong> at IIT Patna, currently maintaining an <strong>SPI of 9.57</strong>. My journey is driven by a single question: <em>How can we build code that learns?</em>
-          </motion.p>
-
-          <motion.p variants={itemVariants}>
-            My focus goes beyond standard coursework. I am actively researching <strong>Federated Learning</strong> for IoT devices (published at COMSNETS '26) and building <strong>Agentic AI systems</strong> that can reason and act autonomously.
+            I am a 2nd-year B.Tech student in <strong>Artificial Intelligence and Data Science</strong> at Indian Institute of Technology (IIT) Patna, currently at an <strong>SPI of 9.57</strong>. I focus on translating complex AI research into deployable code. My journey is driven by a single question: <em>How can we build code that learns?</em>
           </motion.p>
 
           <motion.p variants={itemVariants}>
             When I am not training models or optimizing algorithms, I am building the full-stack interfaces that make them usable. I believe the best engineers are those who can navigate both the theoretical depths of ML and the practical challenges of Software Engineering.
           </motion.p>
           
-          <motion.div variants={itemVariants} className="p-5 bg-white/50 dark:bg-slate-800/50 rounded-xl border-l-4 border-sage shadow-sm mt-4">
+
+          <motion.div variants={itemVariants} className="m-4 p-5 bg-white/50 dark:bg-slate-800/50 rounded-xl border-l-4 border-sage shadow-sm mt-4">
              <h4 className="font-semibold text-slate-800 dark:text-white flex items-center gap-2 mb-1">
                <User className="w-5 h-5 text-sage" /> Beyond the Screen
              </h4>
              <p className="text-base text-slate-600 dark:text-slate-400">
-               Off-campus, you can find me playing basketball, swimming, or competing in public speaking events. I thrive in environments that challenge me to be observant, quick-thinking, and creative.
+               Off-classroom, you can find me playing basketball, swimming, networking with fellow IITians or volunteering in college events. I thrive in environments that challenge me to be observant, quick-thinking, and creative.
              </p>
           </motion.div>
         </motion.div>

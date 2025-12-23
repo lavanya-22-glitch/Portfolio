@@ -6,11 +6,11 @@ const Skills = () => {
   // 1. Core Technical Proficiency (Progress Bars)
   // Sourced from Languages & Frameworks in your CV
   const technicalSkills = [
-    { name: "Python (AI/ML Stack)", level: 95 },
-    { name: "C++ (DSA & Logic)", level: 90 },
+    { name: "Python (AI/ML Stack)", level: 90 },
+    { name: "C++ (DSA & Logic)", level: 95 },
     { name: "React.js & Tailwind", level: 85 },
-    { name: "SQL & Databases", level: 80 },
-    { name: "PyTorch & NumPy", level: 75 },
+    { name: "SQL & Databases", level: 70 },
+    { name: "PyTorch & NumPy", level: 80 },
   ];
 
   // 2. Specialized AI/ML Domains (Badges)

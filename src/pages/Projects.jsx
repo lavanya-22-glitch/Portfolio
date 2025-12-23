@@ -171,7 +171,7 @@ const Projects = () => {
       title: "Autonomous Agentic Offloading",
       subtitle: "Edge-Cloud Optimization System",
       // Front:
-      desc: "An implementable agent-based system that decides between edge vs. cloud execution. Designed the data pipeline and a React-based decision interface for contextual state reasoning.",
+      desc: "An implementable agent-based system that decides between edge vs. cloud execution. Designed the data pipeline and a ReAct-based decision interface for contextual state reasoning.",
       // Back:
       longDesc: "This project addresses the dynamic nature of Edge-Cloud computing by deploying an Autonomous Agent to handle task offloading. Unlike static algorithms, the agent uses ReAct (Reasoning + Acting) prompting to evaluate real-time network conditions, latency constraints, and energy costs before making a decision.\n\nTechnically, I engineered the complete data pipeline using Python to simulate network environments and built a responsive React frontend. This interface visualizes the agent's 'thought process' step-by-step, providing interpretability for why a specific offloading decision was made.",
       tags: ["Agentic AI", "ReAct", "Systems", "Python"],
@@ -185,33 +185,16 @@ const Projects = () => {
       type: "Ongoing Research",
       layout: "full" 
     },
-    {
-      title: "Fast Domain Adaptation for IoT",
-      subtitle: "COMSNETS 2026 Accepted Paper",
-      // Front:
-      desc: "Implemented a Meta-Learning + Federated Knowledge Distillation framework to compress neural networks for IoT. Reduced training time while maintaining generalization.",
-      // Back:
-      longDesc: "This research tackles the challenge of training deep learning models on resource-constrained IoT devices while preserving user privacy. I proposed a hybrid framework combining Federated Learning (FL) with Knowledge Distillation (KD).\n\nBy integrating Meta-Learning, the system allows the global model to adapt rapidly to new device domains with minimal local data. The result was a significant reduction in communication overhead and training time compared to traditional federated setups, making complex AI feasible on edge hardware.",
-      tags: ["Federated Learning", "Meta-Learning", "IoT"],
-      images: [
-        "/images/federated.png",
-        "/images/comsnets.png"
-      ],
-      repoLink: null,
-      paperLink: "https://drive.google.com/file/d/1MeBfapDZF8KByvp49ykNyx3yPEnGwhgP/view?usp=drive_link",
-      demoLink: null,
-      type: "Conference Paper",
-      layout: "split"
-    },
 
-    // --- DEV PROJECTS ---
+
+        // --- DEV PROJECTS ---
     {
       title: "Ultimate Tic-Tac-Toe Platform",
       subtitle: "Live Competitive Game Bot",
       // Front:
-      desc: "Built a live gaming platform supporting 100+ players. Engineered an AI bot using Minimax algorithm with Alpha-Beta pruning to play optimally within time budgets.",
+      desc: "Built a live gaming platform supporting 50+ players. Engineered an AI bot using Minimax algorithm with Alpha-Beta pruning to play optimally within time budgets.",
       // Back:
-      longDesc: "This platform was built to test algorithmic efficiency under high-concurrency loads. I engineered an unbeatable AI bot using the Minimax algorithm, optimized with Alpha-Beta pruning and iterative deepening to calculate optimal moves within strict time limits.\n\nThe backend architecture handles real-time matchmaking and state management for over 100 concurrent players. The system ensures low-latency game updates and includes a spectator mode for tournament observation.",
+      longDesc: "Built and deployed a live Ultimate Tic-Tac-Toe platform supporting human-vs-bot, human-vs-human, and user-uploaded bot competitions; used by 50+ players.\n\nImplemented a high-performance strategy bot by reducing search space from ~10^76 states (naive) to ~10^6 states per move using Minimax, Alpha–Beta pruning, transposition tables, time-bounded search, and graph-based optimizations for efficient state-space exploration.\n\nWon first place in intra-college coding competition by NJACK ML by defeating 48 bots and scoring a 5.6/6.",
       tags: ["Algorithms", "Minimax", "Game Theory", "React"],
       images: [
         "/images/ttt (4).png",
@@ -232,7 +215,7 @@ const Projects = () => {
       // Front:
       desc: "Reconstructed scrambled video frames using Kruskal’s MST and Union-Find algorithms. Optimized the O(N² log N) pipeline via parallel processing.",
       // Back:
-      longDesc: "Solved a complex computer vision puzzle: reconstructing a video stream from scrambled fragments without timestamps. I modeled the problem as a graph where video frames were nodes and edge weights represented visual similarity based on pixel gradients.\n\nUsing Kruskal’s Minimum Spanning Tree (MST) and Union-Find algorithms, I reconstructed the correct sequence by finding the 'path of least resistance' between frames. To handle high-resolution inputs, I optimized the O(N² log N) pipeline using parallel processing techniques.",
+      longDesc: "Solved a complex computer vision puzzle: reconstructing a video stream from scrambled fragments without timestamps. I modeled the problem as a graph where video frames were nodes and edge weights represented visual similarity based on pixel gradients.\n\nUsing Kruskal’s Minimum Spanning Tree (MST) and Union-Find algorithms, I reconstructed the correct sequence by finding the 'path of least resistance' between frames. To handle high-resolution inputs, I optimized the O(N² log N) pipeline using parallel processing techniques.\n\nReceived Honorary Mention place in intra-college coding competition by NJACK ML by scoring a 403/420.",
       tags: ["OpenCV", "Python", "Kruskal's Algo"],
       images: [
         "/images/chaos (1).png",
@@ -246,6 +229,26 @@ const Projects = () => {
       isWinner: true,
       layout: "grid"
     },
+
+    {
+      title: "Fast Domain Adaptation for IoT",
+      subtitle: "COMSNETS 2026 Accepted Paper",
+      // Front:
+      desc: "Selected for presenting a Meta-Learning + Federated Knowledge Distillation framework to compress neural networks for IoT.",
+      // Back:
+      longDesc: "This research tackles the challenge of training deep learning models on resource-constrained IoT devices while preserving user privacy. A hybrid framework combining Federated Learning (FL) with Knowledge Distillation (KD).\n\nBy integrating Meta-Learning, the system allows the global model to adapt rapidly to new device domains with minimal local data. The result was a significant reduction in communication overhead and training time compared to traditional federated setups, making complex AI feasible on edge hardware.\n\nDelivered the technical presentation on optimizing neural networks via Federated Knowledge Distillation for resource-constrained devices.",
+      tags: ["Federated Learning", "Meta-Learning", "IoT"],
+      images: [
+        "/images/federated.png",
+        "/images/comsnets.png"
+      ],
+      repoLink: null,
+      paperLink: "https://drive.google.com/file/d/1MeBfapDZF8KByvp49ykNyx3yPEnGwhgP/view?usp=drive_link",
+      demoLink: null,
+      type: "Conference Paper",
+      layout: "split"
+    },
+
     // --- CREATIVE ---
     {
       title: "Light Side",
@@ -253,7 +256,7 @@ const Projects = () => {
       // Front:
       desc: "A pure CSS visual design project for 'Style Wars'. The challenge: Style a raw HTML file using ONLY CSS—no JavaScript, no HTML edits. Just pure visual creativity.",
       // Back:
-      longDesc: "A pure creative coding challenge: build a fully interactive, visually immersive interface using ONLY CSS. No JavaScript logic and no HTML modifications were allowed.\n\nI utilized advanced CSS features including the 'Checkbox Hack' for state management, complex combinators for interactivity, and extensive pseudo-elements (::before/::after) to create depth and animation. This project demonstrates a deep mastery of the browser rendering engine and constraint-based design.",
+      longDesc: "A pure creative coding challenge: build a fully interactive, visually immersive interface using ONLY CSS. No JavaScript logic and no HTML modifications were allowed.\n\nI utilized advanced CSS features including the 'Checkbox Hack' for state management, complex combinators for interactivity, and extensive pseudo-elements (::before/::after) to create depth and animation. This project demonstrates a deep mastery of the browser rendering engine and constraint-based design.\n\nReceived Honorary Mention place in intra-college coding competition by NJACK Dev among 60 contestants",
       tags: ["Pure CSS", "Design System", "Creative Coding"],
       images: ["/images/light.png"],
       repoLink: "https://github.com/lavanya-22-glitch/Light-Side-Lavanya",
