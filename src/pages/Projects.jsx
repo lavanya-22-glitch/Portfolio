@@ -179,7 +179,7 @@ const Projects = () => {
         "/images/taskoffloading.png", 
         "https://placehold.co/400x300/475569/ffffff?text=System+Architecture"
       ],
-      // repoLink: "#", 
+      repoLink: "https://github.com/lavanya-22-glitch/LangGraph-Multi-Task-Offloading-in-Edge-Cloud-Systems", 
       paperLink: "https://drive.google.com/file/d/16X9uJ7jrqyC8D3OHGqFM7y4fia7SY9ns/view?usp=drive_link", 
       demoLink: null,
       type: "Ongoing Research",
